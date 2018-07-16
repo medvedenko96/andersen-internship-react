@@ -5,6 +5,4 @@ const divStyle = {
   fontSize: '20px',
 }
 
-export default function Text (props){
-    return React.createElement('div', { style: divStyle }, props.someText); 
-}
+export const Text = ({someText}) => <div style={divStyle}>{someText}</div> ;
