@@ -1,13 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom'
-import  Header from './Header';
 
-const App = () => (
-  <div>
-    <Header />
-  </div>
-)
+import  App from './App';
 
 render (
   <BrowserRouter>
