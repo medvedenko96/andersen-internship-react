@@ -1,0 +1,1 @@
+import React, { Component } from 'react';export default class FilmsContainer extends Component {  constructor (props) {    super(props)    this.state = {      films : ''    }  }  render () {    return (      <div>        {console.log(this.props.dataFilms)}      </div>    )  }}
