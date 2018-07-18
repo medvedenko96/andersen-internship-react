@@ -12,17 +12,18 @@ export default class Header extends Component {
     }
   }
 
-  getFilms = (json) => {
+  getFilms = (query) => {
     this.setState({
-      films: this.props.onGetFilms(json)
+      films: query
     })
+    this.props.onGetFilmsInHeader(query)
   }
 
   render () {
     return (
       <header>
         <h1>Kinofilms</h1>
-        <FilmsSearch onGetFilms={this.getFilms}/>
+        <FilmsSearch onGetFilmsInFilmsSearch={this.getFilms}/>
         <div className='twoButton'>
           <button>Sing in</button>
           <span> or </span>

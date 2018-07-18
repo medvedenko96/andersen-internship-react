@@ -1,0 +1,1 @@
+import React from 'react';import './index.css'export default function FilmCard(props) {  return (    <div className='FilmCard'>      <img src={props.img} alt={props.name} />      <div>        <div className='nameFilm' >          {props.name}        </div>        <div className='ScoreFilm'>          {props.score}        </div>      </div>    </div>  )}

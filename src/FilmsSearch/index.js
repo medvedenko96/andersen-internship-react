@@ -18,7 +18,7 @@ export default class FilmsSearch extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    this.props.onGetFilms(queryFilms(this.state.value))
+     this.props.onGetFilmsInFilmsSearch(queryFilms(this.state.value))
   }
 
   render () {
