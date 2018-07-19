@@ -1,1 +1,5 @@
-.FilmsContainer {    display: flex;    flex-wrap: wrap;}
+.FilmsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
