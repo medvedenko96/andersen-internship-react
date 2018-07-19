@@ -1,5 +1,5 @@
-.FilmsContainer {
+:local(.FilmsContainer) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: stretch;
+    justify-content: flex-start;
 }

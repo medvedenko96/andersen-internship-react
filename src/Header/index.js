@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './index.css';
+import style from './index.css';
 import FilmsSearch from '../FilmsSearch'
 
 export default class Header extends Component {
@@ -21,7 +21,7 @@ export default class Header extends Component {
 
   render () {
     return (
-      <header>
+      <header className={style.Header}>
         <h1>Kinofilms</h1>
         <FilmsSearch onGetFilmsInFilmsSearch={this.getFilms}/>
         <div className='twoButton'>
