@@ -1,1 +1,1 @@
-:local(.FilmCard) {    display: flex;    flex-direction: column;    align-items: center;    max-width: 25%;    width: 100%;    text-decoration: none;    color: black;}:local(img) {    width: 70%;}
+:local(img) {    width: 70%;}:local(.FilmCard) {    display: flex;    flex-direction: column;    align-items: center;    max-width: 25%;    width: 100%;    text-decoration: none;    color: black;}
