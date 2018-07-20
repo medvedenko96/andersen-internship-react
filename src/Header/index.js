@@ -4,13 +4,6 @@ import style from './index.css';
 import FilmsSearch from '../FilmsSearch'
 
 export default class Header extends Component {
-  constructor (props) {
-    super(props)
-
-    this.state = {
-      films : ''
-    }
-  }
 
   getFilms = (query) => {
     this.setState({

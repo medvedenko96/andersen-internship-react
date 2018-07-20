@@ -3,20 +3,20 @@ import React, { Component } from 'react';
 import Header from '../Header'
 
 export default class FilmView extends Component {
-  constructor (props) {
-    super(props)
 
-    this.state = {
-      film : []
-    }
+  state = {
+    film : ''
   }
 
   componentWillMount() {
-
+    fetch()
+      this.setState({
+        film : this.props.match.params.id
+      })
   }
 
   render() {
-    console.log(this.props.match.params)
+    console.log(this.state.film)
     return(
       <div>
         <Header />

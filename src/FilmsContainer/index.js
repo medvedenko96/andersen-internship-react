@@ -4,13 +4,6 @@ import styles from './index.css';
 import FilmCard from '../FilmCard'
 
 export default class FilmsContainer extends Component {
-  constructor (props) {
-    super(props)
-
-    this.state = {
-      films : ''
-    }
-  }
 
   render () {
     console.log(this.props.dataFilms)

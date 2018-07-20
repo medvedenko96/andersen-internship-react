@@ -4,12 +4,9 @@ import queryFilms from './queryFilms'
 import './index.css';
 
 export default class FilmsSearch extends Component {
-  constructor (props) {
-    super(props)
 
-    this.state = {
-      value : ''
-    }
+  state = {
+    value : ''
   }
 
   handleChange = (event) => {

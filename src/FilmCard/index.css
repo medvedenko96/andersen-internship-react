@@ -1,4 +1,4 @@
-:local(.FilmCard) {
+.FilmCard {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,6 +8,6 @@
     color: black;
 }
 
-:local(img) {
+img {
     width: 70%;
 }

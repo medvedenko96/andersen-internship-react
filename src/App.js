@@ -5,12 +5,9 @@ import FilmsContainer from  './FilmsContainer'
 import style from './App.css'
 
 export default class App extends Component {
-  constructor (props) {
-    super(props)
 
-    this.state = {
-      data : []
-    }
+  state = {
+    data : []
   }
 
   getFilms = (query) => {

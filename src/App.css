@@ -1,4 +1,4 @@
-:local(.Wrapper) {
+.Wrapper {
     max-width: 1170px;
     text-align: center;
     margin: 0 auto;
