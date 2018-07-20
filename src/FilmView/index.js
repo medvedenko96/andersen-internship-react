@@ -11,6 +11,10 @@ export default class FilmView extends Component {
     }
   }
 
+  componentWillMount() {
+
+  }
+
   render() {
     console.log(this.props.match.params)
     return(
@@ -24,9 +28,8 @@ export default class FilmView extends Component {
             <img src="" alt=""/>
           </div>
           <div>
-            <div className='infoo'>
+            <div className='info'>
               <div className='summary'></div>
-
             </div>
           </div>
         </main>
