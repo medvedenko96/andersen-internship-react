@@ -1,0 +1,23 @@
+.imageWrapper {
+    width: 700px;
+    height: auto;
+    overflow: hidden;
+}
+
+:local(img) {
+    width: 90%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.infoWrapper {
+    display: flex;
+}
+
+.info {
+    margin: 20px;
+}

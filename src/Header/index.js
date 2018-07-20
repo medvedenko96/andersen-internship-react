@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom'
 
 import style from './index.css';
 import FilmsSearch from '../FilmsSearch'
@@ -15,7 +16,9 @@ export default class Header extends Component {
   render () {
     return (
       <header className={style.Header}>
-        <h1>Kinofilms</h1>
+        <NavLink to='/'>
+          <h1>Kinofilms</h1>
+        </NavLink>
         <FilmsSearch onGetFilmsInFilmsSearch={this.getFilms}/>
         <div className='twoButton'>
           <button>Sing in</button>
