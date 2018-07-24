@@ -1,16 +1,20 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
-import  App from './App';
-import FilmView from './FilmView'
+import store from './redux/store';
+import App from './components/App';
+import FilmView from './components/FilmView';
 
 render (
-  <BrowserRouter>
-    <div>
-      <Route exact path='/' component={App} />
-      <Route path='/film/:id' component={FilmView} />
-    </div>
-  </BrowserRouter>,
+  <Provider store={store}>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/' component={App} />
+        <Route path='/film/:id' component={FilmView} />
+      </Switch>
+    </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 )
