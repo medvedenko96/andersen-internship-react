@@ -1,7 +1,7 @@
 import React, { Component }  from 'react';
 import { NavLink } from 'react-router-dom';
 
-import styles from './index.css';
+import styles from './FilmCard.css';
 
 export default class FilmCard extends Component {
 

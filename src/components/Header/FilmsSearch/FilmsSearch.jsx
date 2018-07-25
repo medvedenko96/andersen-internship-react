@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux'
 
-import loadDataFilms from '../../actions/films';
-import './index.css';
+import loadDataFilms from '../../../actions/films';
+import './FilmsSearch.css';
 
 class FilmsSearch extends Component {
   state = {
