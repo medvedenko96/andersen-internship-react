@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { loadDataFilms } from '../../../../actions/getApiActions';
+import { apiGetFilms } from '../../../../actions/apiFilmActions';
 import './FilmsSearch.css';
 
 class FilmsSearch extends Component {
@@ -18,17 +18,26 @@ class FilmsSearch extends Component {
     this.props.loadDataFilms(this.state.value);
   }
 
+  componentDidMount(){
+    this.nameInput.focus();
+  }
+
   render () {
+
     return (
       <form onSubmit={this.handleSubmit} >
-        <input type="text" value={ this.state.value } onChange={ this.handleChange } />
+        <input
+          type="text"
+          ref={(input) => { this.nameInput = input; }}
+          value={ this.state.value }
+          onChange={ this.handleChange } />
       </form>
     )
   }
 }
 
 const mapDispatchToProps = {
-  loadDataFilms
+  loadDataFilms: apiGetFilms
 }
 
 export default connect(null, mapDispatchToProps)(FilmsSearch);

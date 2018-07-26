@@ -2,3 +2,7 @@ input {
     width: 350px;
     height: 30px;
 }
+
+form {
+   flex-basis: 65%;
+}

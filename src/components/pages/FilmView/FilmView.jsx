@@ -2,20 +2,16 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import style from './FilmView.css';
-import { loadDataFilm } from '../../../actions/getApiActions';
+import { apiGetFilm } from '../../../actions/apiFilmActions';
 
 class FilmView extends Component {
-
-  state = {
-    filmId : this.props.match.params.id
-  }
-
-  componentWillMount() {
-    this.props.loadDataFilm(this.state.filmId)
+  componentDidMount() {
+    this.props.loadDataFilm(this.props.match.params.id);
   }
 
   render() {
     const film = this.props.film;
+
     return(
       <div className={style.wrapper}>
         <main>
@@ -41,14 +37,10 @@ class FilmView extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return  {
-    film : state.film
-  }
-}
+const mapStateToProps = state => ({ film : state.film });
 
 const mapDispatchToProps =  {
-  loadDataFilm
+  loadDataFilm: apiGetFilm
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(FilmView);

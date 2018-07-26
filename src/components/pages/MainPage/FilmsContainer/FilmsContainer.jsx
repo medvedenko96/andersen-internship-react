@@ -7,16 +7,17 @@ import FilmCard from './FilmCard/index'
 class FilmsContainer extends Component {
 
   render () {
+
     return (
       <div className={styles.FilmsContainer}>
         {
-          this.props.films.map((film) => <FilmCard key={film.show.id}
+          this.props.films.map(({ show, score }) => <FilmCard key={show.id}
             img={
-              film.show.image ? film.show.image.medium : 'img/avatar.jpg'
+              show.image ? show.image.medium : 'img/avatar.jpg'
             }
-            name={film.show.name}
-            score={film.score} 
-            id={film.show.id}
+            name={show.name}
+            score={score}
+            id={show.id}
             />
           )
         }

@@ -6,6 +6,7 @@ import styles from './FilmCard.css';
 export default class FilmCard extends Component {
 
   render() {
+
     return (
       <NavLink className={styles.FilmCard}  to={`/film/${this.props.id}`}>
         <img src={this.props.img} alt={this.props.name}/>

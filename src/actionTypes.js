@@ -1,12 +1,12 @@
 import keyMirror from 'keymirror';
 
 const types = {
-  GET_API_FILM : null,
-  GET_API_FILMS : null,
-  GET_API_FILM_REQUEST : null,
-  GET_API_FILMS_REQUEST : null,
-  GET_API_FILM_FAILURE : null,
-  GET_API_FILMS_FAILURE : null,
+  API_GET_FILM : null,
+  API_GET_FILMS : null,
+  API_GET_FILM_REQUEST : null,
+  API_GET_FILMS_REQUEST : null,
+  API_GET_FILM_FAILURE : null,
+  API_GET_FILMS_FAILURE : null,
   API_CALL : null
 }
 
