@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import style from './FilmView.css';
-import Header from '../Header/Header';
-import loadDataFilm from '../../actions/film';
-
+import { loadDataFilm } from '../../../actions/getApiActions';
 
 class FilmView extends Component {
 
@@ -20,7 +18,6 @@ class FilmView extends Component {
     const film = this.props.film;
     return(
       <div className={style.wrapper}>
-        <Header />
         <main>
             <h2>{film.name}</h2>
          <div className={style.infoWrapper}>
@@ -54,4 +51,4 @@ const mapDispatchToProps =  {
   loadDataFilm
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(FilmView)
+export default connect(mapStateToProps, mapDispatchToProps)(FilmView);

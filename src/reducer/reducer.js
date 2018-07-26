@@ -1,3 +1,5 @@
+import { actionTypes }  from '../actionTypes';
+
 const def = {
   films : [],
   film : []
@@ -5,15 +7,15 @@ const def = {
 
 const rootReducer = (state = def, action) => {
   switch (action.type) {
-    case 'FILMS' :
+    case actionTypes.GET_API_FILMS_REQUEST :
       return {
         ...state,
-        films : action.data
+        films : action.payload
       }
-    case 'FILM' :
+    case actionTypes.GET_API_FILM_REQUEST :
       return {
         ...state,
-        film : action.data
+        film : action.payload
       }
     default:
       return state;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
 import styles from './FilmsContainer.css';
-import FilmCard from './FilmCard'
+import FilmCard from './FilmCard/index'
 
 class FilmsContainer extends Component {
 
@@ -31,4 +31,4 @@ function mapStateToProps (state) {
   }
 }
 
-export default connect(mapStateToProps)(FilmsContainer)
+export default connect(mapStateToProps)(FilmsContainer);

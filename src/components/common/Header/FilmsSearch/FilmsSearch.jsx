@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux'
 
-import loadDataFilms from '../../../actions/films';
+import { loadDataFilms } from '../../../../actions/getApiActions';
 import './FilmsSearch.css';
 
 class FilmsSearch extends Component {
@@ -28,10 +27,8 @@ class FilmsSearch extends Component {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    loadDataFilms: bindActionCreators(loadDataFilms, dispatch)
-  }
+const mapDispatchToProps = {
+  loadDataFilms
 }
 
 export default connect(null, mapDispatchToProps)(FilmsSearch);
